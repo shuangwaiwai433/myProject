@@ -1,15 +1,3 @@
-import { defineComponent, h } from "vue";
-
-export default defineComponent({
-
-  name: "SButton",
-
-  // template:'<button>MyButton</button>'
-
-  render() {
-
-    return h("button", null, "MyButton");
-
-  },
-
-});
+import SButton from "./button";
+// 导出Button组件
+export default SButton;

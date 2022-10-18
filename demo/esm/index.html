@@ -1,14 +1,17 @@
 <h1>Demo</h1>
 <div id="app"></div>
+<link rel="stylesheet" href="../../dist/assets/entry.f4e87f69.css" >
 <script type="module">
     import { createApp } from "vue/dist/vue.esm-bundler.js";
     import SmartyUI, { SFCButton, JSXButton, MyButton } from "../../dist/smarty-ui.esm.js";
 
     createApp({
         template: `
-<SButton/>
-<JSXButton/>
-<SFCButton/>
+        <SButton color="blue" round plain icon="search" ></SButton>
+         <SButton color="green" round plain icon="edit" ></SButton>
+         <SButton color="gray" round plain icon="check" ></SButton>
+         <SButton color="yellow" round plain icon="message" ></SButton>
+         <SButton color="red" round plain icon="delete" ></SButton>
     `}).use(SmartyUI).mount('#app')
 
 </script>
