@@ -16,7 +16,7 @@ describe("Button", () => {
         wrapper
           .classes()
           .map((v) => v.replace("\n", ""))
-          .includes("bg-blue-500")
+          .includes("bg-blue-500"),
       ).toBe(true);
     });
   });
