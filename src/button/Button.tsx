@@ -2,16 +2,7 @@ import { defineComponent, PropType } from "vue";
 import "uno.css";
 
 export type ISize = "small" | "medium" | "large";
-export type IColor =
-  | "black"
-  | "gray"
-  | "red"
-  | "yellow"
-  | "green"
-  | "blue"
-  | "indigo"
-  | "purple"
-  | "pink";
+export type IColor = "black" | "gray" | "red" | "yellow" | "green" | "blue" | "indigo" | "purple" | "pink";
 
 export const props = {
   // 新增
@@ -83,11 +74,7 @@ export default defineComponent({
           mx-1
           `}
       >
-        {props.icon !== "" ? (
-          <i class={`i-ic-baseline-${props.icon} p-3`}></i>
-        ) : (
-          ""
-        )}
+        {props.icon !== "" ? <i class={`i-ic-baseline-${props.icon} p-3`}></i> : ""}
         {slots.default ? slots.default() : ""}
       </button>
     );
