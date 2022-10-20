@@ -6,3 +6,7 @@ dist
 !.vscode/extensions.json
 # pnpm-lock.yaml 提交到远程，可能会造成部署失败
 pnpm-lock.yaml
+dist/*
+
+packages/shuangwaiwai433/dist
+packages/docs-vite/dist

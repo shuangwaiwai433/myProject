@@ -1,8 +1,12 @@
-
-/node_modules/
+**/node_modules/
+**/coverage/
+**/.pnpm-debug
+**/dist
+package-lock.json
+.DS_Store
+.spress
+.vercel
 dist
-# Editor directories and files
-.vscode
-!.vscode/extensions.json
-# pnpm-lock.yaml 提交到远程，可能会造成部署失败
-pnpm-lock.yaml
+.idea
+/test
+*.zip
