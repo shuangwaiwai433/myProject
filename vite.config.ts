@@ -13,7 +13,7 @@ const rollupOptions = {
   },
 };
 
-export default defineConfig({
+export const config = {
   plugins: [
     vue(),
     vueJsx({}),
@@ -46,5 +46,8 @@ export default defineConfig({
       // 导出模块格式
       formats: ["es", "umd", "iife"],
     },
+    outDir: "./dist",
   },
-});
+};
+
+export default defineConfig(config);

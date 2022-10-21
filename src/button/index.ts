@@ -1,4 +1,12 @@
 import SButton from "./Button";
-// 导出Button组件
+import { App } from "vue";
 
-export default SButton;
+// 导出Button组件
+export { SButton };
+
+// 导出Vue插件
+export default {
+  install(app: App) {
+    app.component(SButton.name, SButton);
+  },
+};
